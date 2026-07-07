@@ -29,7 +29,7 @@ const projects = [
     title: "Portfolio web page",
     description: "I am doing a quiz project in full-stack.",
     contant: [
-      "In full-stack web development and I will build both the client-side (frontend) and server-side (backend) of a web application, requiring knowledge of technologies like HTML, CSS, JavaScript, and various backend languages like Node.js,Express Js and various Database language like MYSQL.",
+      "In full-stack web development and I will build both the client-side (frontend) and server-side (backend) of a web application, requiring </ul> knowledge of technologies like HTML, CSS, JavaScript, and various backend languages like Node.js,Express Js and various Database language like MYSQL.",
     ],
   },
   {
@@ -73,7 +73,7 @@ const projects = [
       "I am creating an AI image generator in full stack that includes a login page that has Google and faceBook authentication",
     contant: [
       "I am creating an AI image generator in full stack that includes a login page that has Google and faceBook authentication, then the user login field and also the registration page. Once logged in, go to the home page including Image Generator, Data Management, LogOut. The Image Generator has created an image and viewed the image. The Data Management page has material, vonder. The material and vendor page has to view, edit, update, and delete the items it has used only the adim and manager. Ect...",
-      "In full-stack web development, I will build both the client-side (frontend) and server-side (backend) of a web application, requiring Knowledge of technologies like HTML, CSS, JavaScript, and various Backend languages like Node.js,Express.js and various databases languages like MYSQL and MongoDB. MYSQL has been fetched the data from the client, then MongoDB has been store the request/response the recode.",
+      "In full-stack web development, I will build both the client-side (frontend) > and server-side (backend) of a web application, requiring Knowledge of technologies like HTML, CSS, JavaScript, and various Backend languages like Node.js,Express.js and various databases languages like MYSQL and MongoDB. MYSQL has been fetched the data from the client, then MongoDB has been store the request/response the recode.",
     ],
   },
 ];
@@ -86,7 +86,7 @@ projects.forEach((project, index) => {
      <h3>${project.title}</h3>
             <ul>
               <li>${project.description}</li>
-              <li>$${project.contant[0]}</li>
+              <li>${project.contant.map((topic) => `<p>${topic}</p>`).join("")}</li>
             </ul>`;
   grid.appendChild(projectCard);
 });
